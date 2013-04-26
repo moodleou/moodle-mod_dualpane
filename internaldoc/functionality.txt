@@ -1,0 +1,28 @@
+Dual Pane
+=========
+
+This plugin is designed to provide an activity module that will allow a course creator to create a
+number of steps or instructions for a student to follow with links to websites in the left pane
+that will load in the right pane.
+
+User Interface
+--------------
+
+1. To start this module add it as a standard module within a course.
+
+2. There are then a number of fields outside the standard module fields these are:
+
+i. Start URL
+
+This is the URL that the end user will start with by clicking teh first link availabel called start
+by clicking this link
+
+ii. Steps
+
+Each step has two components:
+
+a. A title - This is where the course creator can assign a title to give a step.
+
+b. Step Instructions - These are the instructions that the student will follow this option allows
+the course creator to use html though for link to function correctly the format should be [[URL]]
+or [[URL TITLE]].

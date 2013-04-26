@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XMLDB PATH="mod/oublog/db" VERSION="20100624" COMMENT="XMLDB file for Moodle mod/oublog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="../../../lib/xmldb/xmldb.xsd"
+>
+    <TABLES>
+        <TABLE NAME="dualpane" COMMENT="Main Dual Pane instance" NEXT="dualpane_steps">
+            <FIELDS>
+                <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" UNSIGNED="true" SEQUENCE="true" NEXT="name" />
+                <FIELD NAME="name" TYPE="char" LENGTH="255" NOTNULL="true" SEQUENCE="false" PREVIOUS="id" NEXT="intro" />
+                <FIELD NAME="intro" TYPE="char" LENGTH="255" NOTNULL="true" SEQUENCE="false" PREVIOUS="name" NEXT="introformat" />
+                <FIELD NAME="introformat" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false" PREVIOUS="intro" NEXT="course" />
+                <FIELD NAME="course" TYPE="int" LENGTH="10" NOTNULL="true" UNSIGNED="true" DEFAULT="0" SEQUENCE="false" PREVIOUS="introformat" NEXT="starturl" />
+                <FIELD NAME="starturl" TYPE="char" LENGTH="255" NOTNULL="true" SEQUENCE="false" PREVIOUS="course" NEXT="backbutton"/>
+                <FIELD NAME="backbutton" TYPE="int" LENGTH="10" NOTNULL="false" SEQUENCE="false" PREVIOUS="starturl" NEXT="stepsformat"/>
+                <FIELD NAME="stepsformat" TYPE="int" LENGTH="10" NOTNULL="true" UNSIGNED="true" DEFAULT="0" SEQUENCE="false" PREVIOUS="backbutton" NEXT="enablehttpswarnings"/>
+                <FIELD NAME="enablehttpswarnings" TYPE="int" LENGTH="10" NOTNULL="true" UNSIGNED="true" DEFAULT="1" SEQUENCE="false" PREVIOUS="stepsformat"/>
+            </FIELDS>
+            <KEYS>
+                <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+            </KEYS>
+            <INDEXES>
+                <INDEX NAME="course" UNIQUE="false" FIELDS="course"/>
+            </INDEXES>
+        </TABLE>
+        <TABLE NAME="dualpane_steps" COMMENT="Steps within a Dual Pane Instance" PREVIOUS="dualpane">
+        <FIELDS>
+            <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" UNSIGNED="true" SEQUENCE="true" NEXT="dualpaneid" />
+            <FIELD NAME="dualpaneid" TYPE="int" LENGTH="10" NOTNULL="true" UNSIGNED="true" DEFAULT="0" SEQUENCE="false" PREVIOUS="id" NEXT="stepnum" />
+            <FIELD NAME="stepnum" TYPE="int" LENGTH="10" NOTNULL="true" UNSIGNED="true" DEFAULT="0" SEQUENCE="false" PREVIOUS="dualpaneid" NEXT="title" />
+            <FIELD NAME="title" TYPE="char" LENGTH="255" NOTNULL="true" SEQUENCE="false" PREVIOUS="stepnum" NEXT="xhtml" />
+            <FIELD NAME="xhtml" TYPE="text" LENGTH="medium" NOTNULL="true" SEQUENCE="false" PREVIOUS="title" />
+        </FIELDS>
+            <KEYS>
+                <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+            </KEYS>
+            <INDEXES>
+                <INDEX NAME="dualpaneid" UNIQUE="false" FIELDS="dualpaneid"/>
+            </INDEXES>
+        </TABLE>
+    </TABLES>
+</XMLDB>

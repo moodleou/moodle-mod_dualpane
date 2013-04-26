@@ -1,0 +1,17 @@
+.dualpane_wrap{width: 100%;}
+
+.dualpane_wrap .dualpane_left{width: 25%; float: left; overflow: auto;}
+.dualpane_wrap .dualpane_left .backbutton{padding: 2px;}
+.dualpane_wrap .dualpane_right{width: 75%; float: left;}
+.dualpane_wrap .dualpane_right iframe{width: 100% !important; height: 100% !important; border: none;}
+.dualpane_wrap .resourcecontent {height: 100%;}
+.dualpane_wrap .dualpane_right object{width: 100% !important; height: 100% !important; border: none;}
+.dualpane_step_hidden {display: none;}
+ul.dualpane_step_buttons {margin: 0px;}
+.dualpane_step_buttons li {display: inline; padding-right: 5px;}
+#dualpane_backsteplink, #dualpane_nextsteplink_grey {display: none;}
+#dualpane_nextsteplink_grey, #dualpane_backsteplink_grey {color: #cccccc;}
+#page-mod-dualpane-upload label {float: left; width: 18em; padding-top: 4px;}
+#page-mod-dualpane-upload .field, #page-mod-dualpane-upload .button {clear: left; padding-top: 0.5em;}
+#page-mod-dualpane-upload .button {text-align: left; margin-left: 18em;}
+#dualpane_securitywarning {border: 1px solid #FC030F; font-size: 12px; font-style: italic;}

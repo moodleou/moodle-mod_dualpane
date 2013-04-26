@@ -1,0 +1,110 @@
+This file contains a test case for the Dual Pane Module.
+
+Initial Setup
+=============
+
+Before doing this test case please have a standard course setup as this is a
+module there are no specific requirements for this course, but it is needed in
+order to add the module.
+
+MOD OU Module Creation
+======================
+
+MOD01 / Test Pane
+    Go to the course and turn on editing.
+    From the drop down menu under a week click on the "Dual Pane" module.
+    Using the module creation settings that load enter the following details:
+        For "Dual Pane Name" enter "Test Pane".
+        In the "Start URL" enter "www.google.co.uk".
+        Go to the steps section.
+        under Step 1 enter the following information:
+            Enter "Searching Google" into the "Step" field.
+            Enter "Using google please search for the word "Egypt" when the
+            results appear click on the first link and read the first page."
+            into the instructions field.
+        Under Step 2 enter the following information:
+            Enter "Yahoo" into the "Step" field.
+            Enter "Please click this link [[http://www.yahoo.co.uk]] to be taken to
+            yahoo."
+        Under Step 3 enter the following information:
+            Enter "Searching Yahoo" into the "Step" field.
+            Enter "Using yahoo please search for the word "Egypt" when the
+            results appear clickk on the first link and read the first page."
+        Click the button labeled "Add 3 fields to form" this will load some
+        extra step fields so we can add more steps/instructions to teh dual
+        pane.
+        Under Step 4 enter the following information:
+            Enter "Bing" into the "Step" field.
+            Enter "Please click this link [[http://www.bing.co.uk]] to be taken to
+            Bing."
+        Under Step 5 enter the following instructions:
+            Enter "Searching Bing" into the "Step" field.
+            Enter "Using bing please search for the word "Egypt" when the
+            results appear click on the first link and read the first page."
+        Then click on "Save and display" this will take you to the Dual Pane
+        you just created so you have view what the students/end users will see.
+
+        Now from that screen it looks fine could be a little more user friendly
+        So lets edit the settings
+        Click on the "Edit Settings" link in the left menu.
+        You will then be taken back to the module editing page.
+        Find the step where we added in the yahoo link and change
+        [[http://www.yahoo.co.uk]] to
+        [[http://www.yahoo.co.uk Click here for Yahoo]]
+        Then find the step where we added in the bing link and change
+        [[http://www.bing.co.uk]] to
+        [[http://www.bing.co.uk Click here for Bing]]
+        Also lets change the title to something more fitting go to the title at
+        the top of the edit form and change it to "Search Engine Crash Course".
+        Now click the "Save and display" button at the bottom.
+
+        Some extra checks for linking capability.
+        Go back to the "Updating Dual Pane" edit screen as above.
+        Add a Step 6 by entering:
+            Enter "Linking test" into the "Step" field
+            Enter "Test links [[http://www.open.ac.uk]] [[www.open.ac.uk]] [[www.open.ac.uk link]]
+                and [[http://www.open.ac.uk]][[www.open.ac.uk OU link]]" into the "Text" field.
+        Click on "Save and display".
+        Confirm that all the elements in step 6 are proper links.
+
+        Ok so we have the Dual Pane now lets back it up. Go back to the course
+        page and click the "Backup" link in the left menu under "Course
+        Administration". Press the "Next" button on the screen that loads.
+
+        Check that "Search Engine Crash Course" is ticked it should be by
+        default then click on the "Next" button.
+
+        The next screen will show a review page make sure that "Search Engine
+        Crash Course" has a green tick next to it and then click the "Perform
+        backup" button.
+
+        Make sure there are no error and that the backup was successful, then
+        click the "Continue" button.
+
+        You should be taken to a screen that list the backups you have made,
+        lets test it was successful by restoring it.
+
+        Next to the backup with the correct date and name click the "Restore"
+        link.
+
+        Check the list that appears shows a green tick next to "Search Engine
+        Crash Course", then click the "Continue" button.
+
+        So we can check everything was backed up correctly into the next screen
+        choose "Restore to a new course" and click on any course category that
+        shows, then click the "Continue" button immediatly underneath there.
+
+        On the next screen click the "Next" button.
+
+        Check "Search Engine Crash Course" is ticked it should be by default,
+        then click the "Next" button.
+
+        Check "Search Engine Crash Course" has a geen tick next to it and then
+        click the "Perform restore" button.
+
+        Make sure there are no error and that the restore was successful, then
+        click the "Continue" button.
+
+        This will take you to the new course which will have the same name but
+        with "copy #". Then find "Search Engine Crash Course" click it and
+        check it works correctly.
