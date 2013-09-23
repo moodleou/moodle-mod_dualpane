@@ -15,3 +15,4 @@ ul.dualpane_step_buttons {margin: 0px;}
 #page-mod-dualpane-upload .field, #page-mod-dualpane-upload .button {clear: left; padding-top: 0.5em;}
 #page-mod-dualpane-upload .button {text-align: left; margin-left: 18em;}
 #dualpane_securitywarning {border: 1px solid #FC030F; font-size: 12px; font-style: italic;}
+#page-mod-dualpane-view #article_main #region-main {width: 100%}

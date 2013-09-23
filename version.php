@@ -26,6 +26,6 @@
  * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-$module->version  = 2013042400;
-$module->requires = 2012120303;
+$module->version  = 2013092300;
+$module->requires = 2013051402.00;
 $module->release  = '2.4.3 (Build: 20130318)';

@@ -209,6 +209,8 @@ class mod_dualpane{
                 $replace[1] = "<a href=\"$1$2\" onclick=\"return false;\"
                         class=\"dualpane_rightpane_link\">$3</a>";
                 $html = preg_replace($pattern, $replace, $html);
+                // Lets check for any www without a protocol and assume it's http.
+                $html = str_replace('href="www', 'href="http://www', $html);
             }
             $stepobj->$stepid = new stdClass();
             $stepobj->$stepid->stepnum = $step->stepnum;

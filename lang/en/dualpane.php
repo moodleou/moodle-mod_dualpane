@@ -51,7 +51,7 @@ $string['steps_help'] = 'Here is where you specify the title and instructions of
 
 You can fill in any number of these. If you leave some of the options blank, they will not be displayed. If you need more than 3 options, click the "Add 3 fields to form" button.';
 $string['addlinks'] = 'Adding links';
-$string['addlinksdesc'] = 'Within step text, to add links that make the right pane change, please use the format [[URL]] or [[URL Title]].  For example, for a link to www.bbc.co.uk you could use either [[www.bbc.co.uk]] or [[www.bbc.co.uk Click Here]].';
+$string['addlinksdesc'] = 'Within step text, to add links that make the right pane change, please use the format [[URL]] or [[URL Title]].  For example, for a link to http://www.bbc.co.uk you could use either [[http://www.bbc.co.uk]] or [[http://www.bbc.co.uk Click Here]].';
 $string['to'] = 'To';
 $string['startpage'] = 'Return to the start';
 $string['restrictedsites'] = 'Restricted sites';

@@ -79,7 +79,8 @@ $counts = $DB->get_records_sql($sql, array($course->id));
 $usesections = course_format_uses_sections($course->format);
 
 if ($usesections) {
-    $sections = get_all_sections($course->id);
+    $modinfo = get_fast_modinfo($course);
+    $sections = $modinfo->get_section_info_all();
 }
 
 $timenow  = time();

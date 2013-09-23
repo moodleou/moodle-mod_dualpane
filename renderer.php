@@ -67,7 +67,7 @@ class mod_dualpane_renderer extends plugin_renderer_base {
         // Sort out links to http if using HTTPS.
         if ($dualpane->get_enable_https_warnings() && mod_dualpane_check_https()) {
             $pattern = "/(<a href=\"http:\/\/[^<]*<\/a>)/";
-            $replace = "sdsd d $1*";
+            $replace = "$1*";
             $content = preg_replace($pattern, $replace, $content);
         }
         return $content;
